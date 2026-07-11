@@ -29,17 +29,7 @@ O objetivo é reunir em um só lugar minha apresentação, projetos desenvolvido
 - **CSS3** — variáveis, grid, flexbox, animações e efeitos visuais
 - **JavaScript** (Vanilla) — interações, scroll reveal, menu mobile, efeito de digitação
 
-## Como rodar o projeto localmente
 
-```bash
-# Clone o repositório
-git clone https://github.com/Brenodev4/portifolio-Brenodev.git
-
-# Entre na pasta do projeto
-cd portifolio-Brenodev
-```
-
-Depois é só abrir o `index.html` no navegador, ou rodar com a extensão **Live Server** do VS Code para ter recarregamento automático.
 
 ## Estrutura de pastas
 
