@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Sousa · Desenvolvedor Backend</title>
+    <meta name="description" content="Portfólio de Breno Sousa, desenvolvedor Backend com stack Fullstack em Python, PHP, MySQL, JavaScript e React.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="fundo-aurora" aria-hidden="true">
+        <span class="mancha mancha-1"></span>
+        <span class="mancha mancha-2"></span>
+        <span class="mancha mancha-3"></span>
+    </div>
+    <div class="grade-pontos" aria-hidden="true"></div>
+    <div class="holofote" id="holofote" aria-hidden="true"></div>
+
+    <div class="barra-progresso" aria-hidden="true">
+        <div class="barra-progresso-preenchimento" id="barraProgresso"></div>
+    </div>
+
+    <nav class="navegacao" id="navPrincipal">
+        <a href="#inicio" class="nav-logo">breno<span>.dev</span></a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul id="navLista">
+            <li><a href="#inicio" class="link-ativo" data-section="inicio">Início</a></li>
+            <li><a href="#sobre" data-section="sobre">Sobre</a></li>
+            <li><a href="#projetos" data-section="projetos">Projetos</a></li>
+            <li><a href="#contatos" data-section="contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <div class="cabecalho-fundo" aria-hidden="true"></div>
+        <div class="glifos-flutuantes" aria-hidden="true">
+            <span class="glifo glifo-1">{ }</span>
+            <span class="glifo glifo-2">&lt;/&gt;</span>
+              <span class="glifo glifo-3">function</span>
+            <span class="glifo glifo-4">=&gt;</span>
+            <span class="glifo glifo-5">SELECT *</span>
+            <span class="glifo glifo-6">( )</span>
+            <span class="glifo glifo-7">async</span>
+            
+        </div>
+
+        <div class="cabecalho-conteudo">
+
+            <div class="terminal" role="img" aria-label="Janela de terminal exibindo um resumo em JSON sobre Breno Sousa">
+                <div class="terminal-brilho" aria-hidden="true"></div>
+                <div class="terminal-barra">
+                    <span class="ponto ponto-vermelho"></span>
+                    <span class="ponto ponto-amarelo"></span>
+                    <span class="ponto ponto-verde"></span>
+                    <span class="terminal-titulo">resposta.json</span>
+                    <span class="terminal-status">● live</span>
+                </div>
+                <pre class="terminal-corpo"><code id="terminalCodigo"></code><span class="cursor" aria-hidden="true">&#9608;</span></pre>
+            </div>
+
+            <div class="cabecalho-perfil">
+                <div class="foto-container">
+                    <div class="foto-moldura">
+                        <img src="./img/fotoperfil.png" alt="Foto de Breno Sousa" class="foto-perfil">
+                    </div>
+                    <span class="foto-chip foto-chip-1">⚙ API REST</span>
+                    <span class="foto-chip foto-chip-2">⚡ Fullstack</span>
+                </div>
+                <p class="eyebrow eyebrow-pulso"> desenvolvedor disponível</p>
+                <h1 class="titulo-nome">Breno Sousa</h1>
+                <p class="subtitulo">Desenvolvedor <span class="cargo-rotativo destaque-texto" id="cargoRotativo">Backend</span></p>
+                <div class="cabecalho-botoes">
+                    <a href="#projetos" class="botao botao-primario"><span>Ver projetos</span></a>
+                    <a href="#contatos" class="botao botao-secundario"><span>Falar comigo</span></a>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-indicador" aria-label="Rolar para a seção Sobre">
+            <span></span>
+        </a>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <p class="eyebrow eyebrow-central">Sobre mim</p>
+        <h2 class="titulo-secao">Sobre mim</h2>
+
+        <div class="sobre-grade">
+            <div class="sobre-paragrafo reveal">
+                <p>
+                    Desenvolvedor Backend com stack Fullstack, focado em construir sistemas seguros e eficientes no
+                    servidor sem perder a conexão com a interface do usuário. No backend, crio rotas, APIs e regras
+                    de negócio robustas utilizando Python e PHP, enquanto na camada de dados atuo com a modelagem,
+                    consultas e persistência estruturada em MySQL. Além disso, domino JavaScript e React para a
+                    criação de interfaces dinâmicas e o consumo otimizado dessas APIs, garantindo que toda a
+                    engrenagem funcione perfeitamente por trás das telas.
+                </p>
+            </div>
+
+            <div class="sobre-stack reveal">
+                <span class="stack-pill"><i class="ponto-status"></i>Python</span>
+                <span class="stack-pill"><i class="ponto-status"></i>PHP</span>
+                <span class="stack-pill"><i class="ponto-status"></i>MySQL</span>
+                <span class="stack-pill"><i class="ponto-status"></i>JavaScript</span>
+                <span class="stack-pill"><i class="ponto-status"></i>React</span>
+                <span class="stack-pill"><i class="ponto-status"></i>Tailwind CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <p class="eyebrow eyebrow-central">Projetos</p>
+        <h2 class="titulo-secao">Meus Projetos</h2>
+
+        <div class="projetos-caixa">
+
+            <article class="projetos-card reveal">
+                <div class="projetos-imagem-wrap">
+                    <img src="./img/projeto3.png" alt="Tela do sistema Estética Automotiva" class="projetos-imagem" loading="lazy">
+                    <span class="status-badge">Concluído</span>
+                </div>
+                <div class="projetos-corpo">
+                    <h3 class="info-projetos">Estética Automotiva</h3>
+                    <p class="paragrafo-projetos">
+                        Aplicação web completa onde desenvolvi o backend em PHP e MySQL para gerenciar agendamentos
+                        e regras de negócio. No frontend, utilizei React com rotas para uma navegação fluida e
+                        Tailwind CSS para criar uma interface moderna, responsiva e integrada perfeitamente às
+                        APIs do sistema.
+                    </p>
+                    <ul class="tags-projeto">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                    <a href="#" class="link-projeto">Ver detalhes <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </article>
+
+            <article class="projetos-card reveal">
+                <div class="projetos-imagem-wrap">
+                    <img src="./img/projeto2.png" alt="Tela da aplicação Previsão do Tempo" class="projetos-imagem" loading="lazy">
+                    <span class="status-badge">Concluído</span>
+                </div>
+                <div class="projetos-corpo">
+                    <h3 class="info-projetos">Previsão do Tempo</h3>
+                    <p class="paragrafo-projetos">
+                        Desenvolvi uma aplicação web que consulta e exibe previsões meteorológicas em tempo real.
+                        Utilizei JavaScript assíncrono (fetch/promises) para consumir dados de uma API externa e
+                        manipular dinamicamente o DOM, apresentando as informações de forma interativa.
+                    </p>
+                    <ul class="tags-projeto">
+                        <li>JavaScript</li>
+                        <li>Fetch API</li>
+                        <li>DOM</li>
+                    </ul>
+                    <a href="#" class="link-projeto">Ver detalhes <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <p class="eyebrow eyebrow-central">Contatos</p>
+        <h2 class="titulo-secao">Contatos</h2>
+        <p class="contatos-descricao">Tem um projeto em mente ou quer trocar uma ideia? Envie uma mensagem abaixo.</p>
+
+        <div class="contatos-grade">
+            <form class="formulario-contato reveal" id="formulario" novalidate>
+                <div class="campo-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como posso te chamar?" class="campo-form" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" class="campo-form" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="text-form" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="botao botao-primario botao-form">
+                    <span class="botao-texto">Enviar mensagem</span>
+                </button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="contatos-social reveal">
+                <p class="social-titulo">Ou me encontre em:</p>
+                <a href="https://github.com/Brenodev4" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span class="social-nome">GitHub</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="https://www.linkedin.com/in/breno-sousa4" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span class="social-nome">LinkedIn</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="mailto:sousabreno793@gmail.com" class="social-link">
+                    <span class="social-nome">E-mail</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; <span id="anoAtual"></span> Breno Sousa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
